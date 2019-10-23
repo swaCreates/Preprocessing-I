@@ -135,20 +135,24 @@ body {
   height: 100%;
   border: 1px solid red;
 }
-.flexer {
+.flexing {
   display: flex;
 }
+.pad {
+  padding: 2%;
+}
 .main-container {
-  margin: 0 5% 0 5%;
+  margin: 0 15% 0 15%;
 }
 nav {
   display: flex;
   justify-content: flex-end;
 }
-a {
+nav a {
   text-decoration: none;
+  color: #EE6C4D;
 }
-a.space {
+nav a.space {
   margin-right: 2%;
 }
 .top-content {
@@ -158,9 +162,30 @@ a.space {
 img {
   width: 35%;
 }
-.bottom-content {
+.middle-content {
   display: flex;
+  margin-top: 5%;
 }
-.bottom-content section {
+.middle-content .objective,
+.middle-content .skills {
   width: 48%;
+}
+.middle-content .objective p {
+  text-align: center;
+  margin-top: 2%;
+}
+.skills {
+  margin-bottom: 2%;
+}
+.skills .box {
+  border: 1px solid #98C1D9;
+  padding: 2%;
+}
+.bottom-content div {
+  display: flex;
+  justify-content: space-around;
+}
+.description {
+  display: flex;
+  border: 1px solid red;
 }
