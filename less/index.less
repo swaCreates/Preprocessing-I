@@ -50,10 +50,75 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	// font-size: 62.5%;
+	border: 1px solid red;
 }
 
+@colors: #EE6C4D;
+
+@marg: 2%;
+
+.flexing{
+	display: flex;
+}
+.pad{
+	padding: 2%;
+}
+
+.main-container{
+	margin: 0 15% 0 15%;
+}
+nav{
+	.flexing();
+	justify-content: flex-end;
+
+	a{
+		text-decoration: none;
+		color: @colors;
+	}
+	a.space{
+		margin-right: @marg;
+	}
+}
+.top-content{
+	.pad();
+	background-color: #E0FBFC;
+}
+img{
+	width: 35%;
+}
+.middle-content{
+	.flexing();
+	margin-top: 5%;
+	
+	.objective, .skills{
+		width: 48%;
+	} //end of bottom classes
+	.objective p{
+		text-align: center;
+		margin-top: @marg;
+	}
+}// end of container
+.skills{
+	margin-bottom: @marg;
+	
+	.box{
+		border: 1px solid #98C1D9;
+		.pad();
+	}
+}
+.bottom-content div{
+	.flexing();
+	justify-content: space-around;
+	// flex-direction: column;
+}
+.description{
+	.flexing();
+	border: 1px solid red;
+
+}
